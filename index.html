@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://gabrielpilote.io/swipecity-design -->
+<html lang="en-US" class="wf-gmsj-n7-active wf-jsjk-n7-active wf-vcsm-i6-active wf-vcsm-i7-active wf-vcsm-i8-active wf-vcsm-n4-active wf-vcsm-n6-active wf-vcsm-n7-active wf-vcsm-n8-active wf-vcsm-n9-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script src="./index_files/nr-1118.min.js.téléchargement"></script><script async="" src="./index_files/analytics.js.téléchargement"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VgUFVldbGwEHU1NUDwcB"};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(16),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(17),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,v="fn"+h,w="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(v,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(v,function(t,n){i(w,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(v,function(t,n){i(w,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(19)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(19)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(19)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(19)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(19)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(w,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!v&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(16),s=t(17),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t,n){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,n])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],16:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],17:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],18:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],19:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(17),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[g[e]];return d&&d.push([b,e,r,a]),a}}function p(t,n){y[t]=m(t).concat(n)}function h(t,n){var e=y[t];if(e)for(var r=0;r<e.length;r++)e[r]===n&&e.splice(r,1)}function m(t){return y[t]||[]}function v(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",g[e]=n,n in u||(u[n]=[])})}var y={},g={},b={on:p,addEventListener:p,removeEventListener:h,emit:e,get:v,listeners:m,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(16),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=x.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(g,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+x.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-x.offset}var s=(new Date).getTime(),c=t("handle"),f=t(16),u=t("ee"),d=t(15),l=window,p=l.document,h="addEventListener",m="attachEvent",v=l.XMLHttpRequest,w=v&&v.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:v,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var y=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=v&&w&&w[h]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:b,userAgent:d};t(12),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(18)},{}]},{},["loader",2,10,4,3]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="keywords" content="Mobile,Geo-fence,Culture,Urban Art">
+      <meta name="description" content="Développement d&#39;une solution numérique clés-en-main pour entreprises orientée diffusion culturelle en géo-localisation. ">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:site" content="@AdobePortfolio">
+      <meta property="og:title" content="Gabriel Pilote - App mobile | Swipecity">
+      <meta property="og:description" content="Développement d&#39;une solution numérique clés-en-main pour entreprises orientée diffusion culturelle en géo-localisation. ">
+      <meta property="og:image" content="https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/0c6eebe2-ea50-445f-b7a2-d725471848b6_rwc_0x0x757x593x757.jpg?h=43e9593684211b1a018533a487337159">
+      <meta name="robots" content="noindex">
+        <link rel="icon" href="https://pro2-bar-s3-cdn-cf2.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/d1b52f20-0d1e-474f-9744-90ce253dee0c_carw_1x1x32.png?h=df2af8e586f7f932e573bf05d1883f78">
+        <link rel="apple-touch-icon" href="https://pro2-bar-s3-cdn-cf4.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/fec1e3d2-369d-40b3-9aaf-e8db8e8fdcc1_carw_1x1x180.png?h=3b344fcf79e0a766d7362ae98c11b55f">
+      <link rel="stylesheet" href="./index_files/main.css" type="text/css">
+      <link rel="stylesheet" href="./index_files/1e9442bc44c99966f0e737e3eca61d9c1549654800.css" type="text/css">
+    <link rel="canonical" href="https://gabrielpilote.io/swipecity-design">
+      <title>Gabriel Pilote - App mobile | Swipecity</title>
+<style type="text/css">@font-face{font-family:gmsj;src:url(https://use.typekit.net/af/d79a98/00000000000000003b9af917/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/d79a98/00000000000000003b9af917/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/d79a98/00000000000000003b9af917/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:jsjk;src:url(https://use.typekit.net/af/2657d4/00000000000000003b9b3038/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/2657d4/00000000000000003b9b3038/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/2657d4/00000000000000003b9b3038/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:vcsm;src:url(https://use.typekit.net/af/f7d492/00000000000000003b9b3067/27/l?subset_id=2&fvd=i6&v=3) format("woff2"),url(https://use.typekit.net/af/f7d492/00000000000000003b9b3067/27/d?subset_id=2&fvd=i6&v=3) format("woff"),url(https://use.typekit.net/af/f7d492/00000000000000003b9b3067/27/a?subset_id=2&fvd=i6&v=3) format("opentype");font-weight:600;font-style:italic;}@font-face{font-family:vcsm;src:url(https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/l?subset_id=2&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/d?subset_id=2&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/a?subset_id=2&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:vcsm;src:url(https://use.typekit.net/af/3e6df8/00000000000000003b9b306b/27/l?subset_id=2&fvd=i8&v=3) format("woff2"),url(https://use.typekit.net/af/3e6df8/00000000000000003b9b306b/27/d?subset_id=2&fvd=i8&v=3) format("woff"),url(https://use.typekit.net/af/3e6df8/00000000000000003b9b306b/27/a?subset_id=2&fvd=i8&v=3) format("opentype");font-weight:800;font-style:italic;}@font-face{font-family:vcsm;src:url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:vcsm;src:url(https://use.typekit.net/af/576d53/00000000000000003b9b3066/27/l?subset_id=2&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/576d53/00000000000000003b9b3066/27/d?subset_id=2&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/576d53/00000000000000003b9b3066/27/a?subset_id=2&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;}@font-face{font-family:vcsm;src:url(https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:vcsm;src:url(https://use.typekit.net/af/d82519/00000000000000003b9b306a/27/l?subset_id=2&fvd=n8&v=3) format("woff2"),url(https://use.typekit.net/af/d82519/00000000000000003b9b306a/27/d?subset_id=2&fvd=n8&v=3) format("woff"),url(https://use.typekit.net/af/d82519/00000000000000003b9b306a/27/a?subset_id=2&fvd=n8&v=3) format("opentype");font-weight:800;font-style:normal;}@font-face{font-family:vcsm;src:url(https://use.typekit.net/af/b683e3/00000000000000003b9b306c/27/l?subset_id=2&fvd=n9&v=3) format("woff2"),url(https://use.typekit.net/af/b683e3/00000000000000003b9b306c/27/d?subset_id=2&fvd=n9&v=3) format("woff"),url(https://use.typekit.net/af/b683e3/00000000000000003b9b306c/27/a?subset_id=2&fvd=n9&v=3) format("opentype");font-weight:900;font-style:normal;}</style><style type="text/css"></style></head>
+        <body class="has-touch link-transition disable-download">  <div class="js-responsive-nav">
+    <div class="responsive-nav has-social">
+      <div class="close-responsive-click-area js-close-responsive-nav">
+        <div class="close-responsive-button"></div>
+      </div>
+          <div class="nav-container">
+            <nav class="js-editable-target editable">
+                <div class="gallery-title"><a href="https://gabrielpilote.io/projets">Projets</a></div>
+      <div class="page-title">
+        <a href="https://gabrielpilote.io/a-propos">À propos</a>
+      </div>
+      <div class="page-title">
+        <a href="https://gabrielpilote.io/cv">CV</a>
+      </div>
+      <div class="page-title">
+        <a href="https://gabrielpilote.io/contact">Contact</a>
+      </div>
+                <div class="social pf-nav-social">
+                  <ul>
+                  </ul>
+                </div>
+            </nav>
+          </div>
+    </div>
+  </div>
+  <div class="site-wrap cfix">
+    <div class="site-container">
+      <div class="site-content">
+        
+        <main>
+  <div class="page-container js-site-wrap js-editable-target editable" data-context="page.page.container">
+    <section class="page standard-modules">
+        <header class="page-header content js-editable-target editable" data-context="pages" data-identity="id:p5a921ff8bf6c69014a21800b0b61a365295fc258611745a96a2c1" data-menu="Page Header">
+            <h1 class="title preserve-whitespace">App mobile | Swipecity</h1>
+            <p class="description">Développement d'une solution numérique clés-en-main pour entreprises orientée diffusion culturelle en géo-localisation. </p>
+            <div class="custom1 preserve-whitespace">Mobile, Geo-fence, Culture, Urban Art</div>
+            
+        </header>
+      <div class="page-content js-page-content js-editable-target editable" data-context="pages" data-identity="id:p5a921ff8bf6c69014a21800b0b61a365295fc258611745a96a2c1" data-menu="Page Content">
+        <div id="project-canvas" class="js-project-modules modules content">
+          <div id="project-modules">
+            
+            <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: px;
+  padding-bottom: px;
+  width: 50%;
+  float: center;
+  clear: both;
+">
+
+    <div class="js-lightbox" data-src="https://pro2-bar-s3-cdn-cf4.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/53833d59-78c0-4041-8e78-f08da3987311.png?h=1755c23991b83bf138d2b3bdd5dc861c">
+          <img class="js-lazy image-loaded" src="./index_files/53833d59-78c0-4041-8e78-f08da3987311_rw_600.png" srcset="https://pro2-bar-s3-cdn-cf4.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/53833d59-78c0-4041-8e78-f08da3987311_rw_600.png?h=3972545ac5bb4a94322b4e4c7fa900a0 400w," sizes="(max-width: 400px) 100vw, 400px">
+    </div>
+
+</div>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="project-module module text project-module-text align- editable js-editable js-project-module" style="  padding-top: px;
+  padding-bottom: px;
+  width: 100%;
+  max-width: 900px;
+  float: center;
+  clear: both;
+">
+  <div class="rich-text js-text-editable module-text"><div style="text-align:center;" class="title"><span style="font-family:vcsm; font-weight:400;"><span style="color:#5e5e5e;" class="texteditor-inline-color"><span style="font-size:72px;" class="texteditor-inline-fontsize">&lt;meta name=&nbsp;</span></span></span></div><div style="text-align:center;" class="title"><span style="font-family:vcsm; font-weight:700;"><span style="color:#5e5e5e;" class="texteditor-inline-color"><span style="font-size:72px;" class="texteditor-inline-fontsize">Application</span></span></span><span style="font-family:vcsm; font-weight:400;"><span style="color:#5e5e5e;" class="texteditor-inline-color"><span style="font-size:72px;" class="texteditor-inline-fontsize">/&gt;</span></span></span></div></div>
+</div>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="project-module module text project-module-text align- editable js-editable js-project-module" style="  padding-top: 20px;
+  padding-bottom: 0px;
+  width: 100%;
+  max-width: 800px;
+  float: center;
+  clear: both;
+">
+  <div class="rich-text js-text-editable module-text"><div>Swipecity permet aux visiteurs de débloquer du contenu numérique géolocalisé en lien avec la culture et l’art urbain: Les organismes locaux ont accès à un portail web de gestion sur lequel ils peuvent déterminer où, quand et comment leur contenu sera diffusé. Puis, à l’aide <a href="https://l.facebook.com/l.php?u=http%3A%2F%2Fwww.swipecity.io%2F%3Ffbclid%3DIwAR0v72NXyO6zjp8EZE_5haw9ghvdejYdNW4b-Kv8BlhrFJZxCu-GCNZ0sic&amp;h=AT0FDeP3-PnYHJuMmbf-BZzg6KVINg3jizCJ9iKl7ckyV9Nw8lXxF6J8KUcW7IVkEnUUhBun98L2GeQlWe0PSebkMC0H2_7rTlolzZzGwgB_npjX4a0VuhGM-YDXZUiPSac" target="_blank">l’application mobile</a> les utilisateurs interagissent avec ce contenu, lorsqu’ils sont à proximité, dans une expérience qui est semblable à une chasse aux trésors.</div></div>
+</div>
+
+            
+            
+            
+            
+            <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 0px;
+  padding-bottom: 40px;
+  width: 85%;
+  float: center;
+  clear: both;
+">
+
+    <div class="js-lightbox" data-src="https://pro2-bar-s3-cdn-cf1.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/9255c8ed-13d2-4db1-ae7b-02e778fc6ace.png?h=20e0b0d3a8a194afbfe5ec7dd9dceb7a">
+          <img class="js-lazy image-loaded" src="./index_files/9255c8ed-13d2-4db1-ae7b-02e778fc6ace_rw_1920.png" srcset="https://pro2-bar-s3-cdn-cf1.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/9255c8ed-13d2-4db1-ae7b-02e778fc6ace_rw_600.png?h=ed9f5ef91f6ddf13d31088af9d02e8c7 600w,https://pro2-bar-s3-cdn-cf1.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/9255c8ed-13d2-4db1-ae7b-02e778fc6ace_rw_1200.png?h=7a19484aafb1cd8ad9c678c32e1bc354 1200w,https://pro2-bar-s3-cdn-cf1.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/9255c8ed-13d2-4db1-ae7b-02e778fc6ace_rw_1920.png?h=5a40820a676f293b221030ff1d18a449 1600w," sizes="(max-width: 1600px) 100vw, 1600px">
+    </div>
+
+</div>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 20px;
+  padding-bottom: 19px;
+  width: 90%;
+">
+
+    <div class="js-lightbox" data-src="https://pro2-bar-s3-cdn-cf.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/8b5c7e1c-3d30-4138-ae03-0f17e1332377.jpg?h=16c995a08ec057263c38e86891c78716">
+          <img class="js-lazy image-loaded" src="./index_files/8b5c7e1c-3d30-4138-ae03-0f17e1332377_rw_1920.jpg" srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/8b5c7e1c-3d30-4138-ae03-0f17e1332377_rw_600.jpg?h=f23516c0d4122e27356918a83e8c363c 600w,https://pro2-bar-s3-cdn-cf.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/8b5c7e1c-3d30-4138-ae03-0f17e1332377_rw_1200.jpg?h=8a7e1747b8de16c6b69f66496deac98b 1200w,https://pro2-bar-s3-cdn-cf.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/8b5c7e1c-3d30-4138-ae03-0f17e1332377_rw_1920.jpg?h=78111926023786bbba57afa12353399a 1769w," sizes="(max-width: 1769px) 100vw, 1769px">
+    </div>
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><p>Image de marque de la plate-forme</p></div>
+    </div>
+</div>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="project-module module text project-module-text align- editable js-editable js-project-module" style="  padding-top: px;
+  padding-bottom: px;
+  width: 100%;
+  max-width: 800px;
+  float: left;
+  clear: both;
+">
+  <div class="rich-text js-text-editable module-text"><div><br></div><div style="text-align:center;" class="title"><span style="color:#aaaaaa;" class="texteditor-inline-color"><span style="font-family:vcsm; font-weight:700;"><span style="font-size:72px;" class="texteditor-inline-fontsize">#Solution</span></span></span></div></div>
+</div>
+
+            
+            
+            
+            
+            <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: px;
+  padding-bottom: px;
+  width: 90%;
+  float: center;
+  clear: both;
+">
+
+    <div class="js-lightbox" data-src="https://pro2-bar-s3-cdn-cf4.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/fdf0f171-685f-4c79-8b36-968e089ab14b.jpg?h=16f20f6178a8d8aef18740737edc123d">
+          <img class="js-lazy image-loaded" src="./index_files/fdf0f171-685f-4c79-8b36-968e089ab14b_rw_1920.jpg" srcset="https://pro2-bar-s3-cdn-cf4.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/fdf0f171-685f-4c79-8b36-968e089ab14b_rw_600.jpg?h=eb7098d5797135c77bef5fa72ce8bcbc 600w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/fdf0f171-685f-4c79-8b36-968e089ab14b_rw_1200.jpg?h=aaa3644e2ffe6dd9fa09ae8582bf6bd0 1200w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/fdf0f171-685f-4c79-8b36-968e089ab14b_rw_1920.jpg?h=57ca4f392f2db5dadb4a7fcd6eff6069 1466w," sizes="(max-width: 1466px) 100vw, 1466px">
+    </div>
+
+</div>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="project-module module text project-module-text align- editable js-editable js-project-module" style="  padding-top: 20px;
+  padding-bottom: 0px;
+">
+  <div class="rich-text js-text-editable module-text"><div style="text-align:center;" class="title"><span style="color:#ff5a5f;" class="texteditor-inline-color">#UI</span></div></div>
+</div>
+
+            
+            
+            
+            
+            
+            
+            
+            <div class="project-module module embed project-module-embed editable js-editable js-project-module" style="  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 90%;
+  float: center;
+  clear: both;
+">
+  <div class="embed-dimensions" style="max-width: 360px; max-height: 640px; margin: 0 auto;">
+                 <div class="embed-aspect-ratio" style="padding-bottom: 177.78%; position: relative; height: 0;">
+                   <iframe src="https://xd.adobe.com/embed/2e62b268-db7d-4afc-65bb-3e447c2969f9-5853/" frameborder="0" allowfullscreen="" style="position:absolute; top:0; left:0; width:100%; height:100%;" class="embed-content"></iframe>
+                 </div>
+               </div>
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><p>*Démonstration interactive de l'UI de l'app</p></div>
+    </div>
+</div>
+
+            
+            
+            
+            
+            
+            <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 41px;
+  padding-bottom: 19px;
+  width: 90%;
+  float: center;
+  clear: both;
+">
+
+    <div class="js-lightbox" data-src="https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/ac2350d4-69da-424b-9863-568494290077.png?h=47a235bfb4616562a9a1e07485c2f0b3">
+          <img class="js-lazy image-loaded" src="./index_files/ac2350d4-69da-424b-9863-568494290077_rw_1920.png" srcset="https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/ac2350d4-69da-424b-9863-568494290077_rw_600.png?h=1c303f084f5a719811fe5ad00ac18bf9 600w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/ac2350d4-69da-424b-9863-568494290077_rw_1200.png?h=b7c4aa19140105f39ead0c499be1f9fb 1200w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/ac2350d4-69da-424b-9863-568494290077_rw_1920.png?h=94764b4f212c772be5b84c6e10972b0b 1920w," sizes="(max-width: 1920px) 100vw, 1920px">
+    </div>
+
+</div>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="project-module module text project-module-text align- editable js-editable js-project-module" style="  padding-top: 20px;
+  padding-bottom: 40px;
+  width: 100%;
+  max-width: 800px;
+  float: left;
+  clear: both;
+">
+  <div class="rich-text js-text-editable module-text"><div class="title" style="text-align:center;"><span class="texteditor-inline-color" style="color:#AAAAAA;">+ Équipe</span></div></div>
+</div>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="project-module module media_collection project-module-media_collection" style="  padding-top: px;
+  padding-bottom: px;
+  width: 80%;
+">
+  <div class="grid--main js-grid-main grid--ready">
+    <div class="grid__item-container js-grid-item-container hoverable" data-flex-grow="347.1488178025" style="width: 378.392px; flex-grow: 378.392;" data-width="1920" data-height="1438">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/77b17a16-2512-47e6-abfd-3b6b1a637ca8_rw_1920.jpg?h=ecde3f821a9159f37aaf75c38016582d" srcset="https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/77b17a16-2512-47e6-abfd-3b6b1a637ca8_rw_600.jpg?h=b0fc0193f528d62efbb5594d5bbb6379 600w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/77b17a16-2512-47e6-abfd-3b6b1a637ca8_rw_1200.jpg?h=7bdca76bd8ab79806568a8a4ae27c9f5 1200w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/77b17a16-2512-47e6-abfd-3b6b1a637ca8_rw_1920.jpg?h=ecde3f821a9159f37aaf75c38016582d 1920w," sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy image-loaded" src="./index_files/77b17a16-2512-47e6-abfd-3b6b1a637ca8_rw_1920.jpg" sizes="504px" srcset="https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/77b17a16-2512-47e6-abfd-3b6b1a637ca8_rw_600.jpg?h=b0fc0193f528d62efbb5594d5bbb6379 600w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/77b17a16-2512-47e6-abfd-3b6b1a637ca8_rw_1200.jpg?h=7bdca76bd8ab79806568a8a4ae27c9f5 1200w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/77b17a16-2512-47e6-abfd-3b6b1a637ca8_rw_1920.jpg?h=ecde3f821a9159f37aaf75c38016582d 1920w,">
+      <span class="grid__item-filler" style="padding-bottom:74.895833333333%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container hoverable" data-flex-grow="347.12950600801" style="width: 378.371px; flex-grow: 378.371;" data-width="1920" data-height="1438">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf2.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/33125443-2414-45b8-9af1-ec2ffd69379d_rw_1920.jpg?h=09ef69927e9cc0144574298347dee3d8" srcset="https://pro2-bar-s3-cdn-cf2.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/33125443-2414-45b8-9af1-ec2ffd69379d_rw_600.jpg?h=2deeda7e8887cb640b569a62d6c0ac71 600w,https://pro2-bar-s3-cdn-cf2.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/33125443-2414-45b8-9af1-ec2ffd69379d_rw_1200.jpg?h=0d13e470546bbf332e720b82eeefe924 1200w,https://pro2-bar-s3-cdn-cf2.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/33125443-2414-45b8-9af1-ec2ffd69379d_rw_1920.jpg?h=09ef69927e9cc0144574298347dee3d8 1920w," sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy image-loaded" src="./index_files/33125443-2414-45b8-9af1-ec2ffd69379d_rw_1920.jpg" sizes="503px" srcset="https://pro2-bar-s3-cdn-cf2.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/33125443-2414-45b8-9af1-ec2ffd69379d_rw_600.jpg?h=2deeda7e8887cb640b569a62d6c0ac71 600w,https://pro2-bar-s3-cdn-cf2.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/33125443-2414-45b8-9af1-ec2ffd69379d_rw_1200.jpg?h=0d13e470546bbf332e720b82eeefe924 1200w,https://pro2-bar-s3-cdn-cf2.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/33125443-2414-45b8-9af1-ec2ffd69379d_rw_1920.jpg?h=09ef69927e9cc0144574298347dee3d8 1920w,">
+      <span class="grid__item-filler" style="padding-bottom:74.9%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container hoverable" data-flex-grow="347.1488178025" style="width: 378.392px; flex-grow: 378.392;" data-width="1920" data-height="1438">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/09ba0688-03bb-47b2-be01-d526e0e0851f_rw_1920.jpg?h=0d48c6dbceedd41cbf0c681dda234570" srcset="https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/09ba0688-03bb-47b2-be01-d526e0e0851f_rw_600.jpg?h=8a7c0984d9e32f1d78e5eb08afc26e77 600w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/09ba0688-03bb-47b2-be01-d526e0e0851f_rw_1200.jpg?h=41d572dc4c941cce78b87a67b0b3f1ae 1200w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/09ba0688-03bb-47b2-be01-d526e0e0851f_rw_1920.jpg?h=0d48c6dbceedd41cbf0c681dda234570 1920w," sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy image-loaded" src="./index_files/09ba0688-03bb-47b2-be01-d526e0e0851f_rw_1920.jpg" sizes="504px" srcset="https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/09ba0688-03bb-47b2-be01-d526e0e0851f_rw_600.jpg?h=8a7c0984d9e32f1d78e5eb08afc26e77 600w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/09ba0688-03bb-47b2-be01-d526e0e0851f_rw_1200.jpg?h=41d572dc4c941cce78b87a67b0b3f1ae 1200w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/09ba0688-03bb-47b2-be01-d526e0e0851f_rw_1920.jpg?h=0d48c6dbceedd41cbf0c681dda234570 1920w,">
+      <span class="grid__item-filler" style="padding-bottom:74.895833333333%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container hoverable" data-flex-grow="347.34507501631" style="width: 378.606px; flex-grow: 378.606;" data-width="1920" data-height="1437">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/a75c2753-46b5-4f5b-8c60-70051e5556d9_rw_1920.jpg?h=4d325c2b436069719378f5e830b575fc" srcset="https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/a75c2753-46b5-4f5b-8c60-70051e5556d9_rw_600.jpg?h=5fb09241564b91aee4827b536a605a3d 600w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/a75c2753-46b5-4f5b-8c60-70051e5556d9_rw_1200.jpg?h=bb2babb91c8d8736ab2aedbb312f7d48 1200w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/a75c2753-46b5-4f5b-8c60-70051e5556d9_rw_1920.jpg?h=4d325c2b436069719378f5e830b575fc 1920w," sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy image-loaded" src="./index_files/a75c2753-46b5-4f5b-8c60-70051e5556d9_rw_1920.jpg" sizes="504px" srcset="https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/a75c2753-46b5-4f5b-8c60-70051e5556d9_rw_600.jpg?h=5fb09241564b91aee4827b536a605a3d 600w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/a75c2753-46b5-4f5b-8c60-70051e5556d9_rw_1200.jpg?h=bb2babb91c8d8736ab2aedbb312f7d48 1200w,https://pro2-bar-s3-cdn-cf6.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/a75c2753-46b5-4f5b-8c60-70051e5556d9_rw_1920.jpg?h=4d325c2b436069719378f5e830b575fc 1920w,">
+      <span class="grid__item-filler" style="padding-bottom:74.853515625%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container hoverable" data-flex-grow="347.1488178025" style="width: 378.392px; flex-grow: 378.392;" data-width="1920" data-height="1438">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf4.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/56917c19-fbe3-4938-895f-0f2703b215f8_rw_1920.jpg?h=21afb4facc1b812a9beef37c76d7d7e5" srcset="https://pro2-bar-s3-cdn-cf4.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/56917c19-fbe3-4938-895f-0f2703b215f8_rw_600.jpg?h=5790370b2069b7cfed887d84feb28727 600w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/56917c19-fbe3-4938-895f-0f2703b215f8_rw_1200.jpg?h=a1cb2bd1fd367b61fd69fff8d8074387 1200w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/56917c19-fbe3-4938-895f-0f2703b215f8_rw_1920.jpg?h=21afb4facc1b812a9beef37c76d7d7e5 1920w," sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy image-loaded" src="./index_files/56917c19-fbe3-4938-895f-0f2703b215f8_rw_1920.jpg" sizes="504px" srcset="https://pro2-bar-s3-cdn-cf4.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/56917c19-fbe3-4938-895f-0f2703b215f8_rw_600.jpg?h=5790370b2069b7cfed887d84feb28727 600w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/56917c19-fbe3-4938-895f-0f2703b215f8_rw_1200.jpg?h=a1cb2bd1fd367b61fd69fff8d8074387 1200w,https://pro2-bar-s3-cdn-cf4.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/56917c19-fbe3-4938-895f-0f2703b215f8_rw_1920.jpg?h=21afb4facc1b812a9beef37c76d7d7e5 1920w,">
+      <span class="grid__item-filler" style="padding-bottom:74.895833333333%;"></span>
+    </div>
+    <div class="grid__item-container js-grid-item-container hoverable" data-flex-grow="347.12950600801" style="width: 378.371px; flex-grow: 378.371;" data-width="1920" data-height="1438">
+      <script type="text/html" class="js-lightbox-slide-content">
+        <div class="grid__image-wrapper">
+          <img src="https://pro2-bar-s3-cdn-cf.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/85072f3d-cb5a-480a-bb9b-0916abd71984_rw_1920.png?h=b3bba06a59b0e7390166d85354fb5df5" srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/85072f3d-cb5a-480a-bb9b-0916abd71984_rw_600.png?h=88dda8fe02c3f038bd9eb6f94acac113 600w,https://pro2-bar-s3-cdn-cf.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/85072f3d-cb5a-480a-bb9b-0916abd71984_rw_1200.png?h=a91299bb7a4d1fd09998ce4b4be33233 1200w,https://pro2-bar-s3-cdn-cf.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/85072f3d-cb5a-480a-bb9b-0916abd71984_rw_1920.png?h=b3bba06a59b0e7390166d85354fb5df5 1920w," sizes="(max-width: 1920px) 100vw, 1920px">
+        <div>
+      </script>
+      <img class="grid__item-image js-grid__item-image grid__item-image-lazy js-lazy image-loaded" src="./index_files/85072f3d-cb5a-480a-bb9b-0916abd71984_rw_1920.png" sizes="503px" srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/85072f3d-cb5a-480a-bb9b-0916abd71984_rw_600.png?h=88dda8fe02c3f038bd9eb6f94acac113 600w,https://pro2-bar-s3-cdn-cf.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/85072f3d-cb5a-480a-bb9b-0916abd71984_rw_1200.png?h=a91299bb7a4d1fd09998ce4b4be33233 1200w,https://pro2-bar-s3-cdn-cf.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/85072f3d-cb5a-480a-bb9b-0916abd71984_rw_1920.png?h=b3bba06a59b0e7390166d85354fb5df5 1920w,">
+      <span class="grid__item-filler" style="padding-bottom:74.9%;"></span>
+    </div>
+    <div class="js-grid-spacer" style="display: none;"></div>
+  </div>
+</div>
+
+            
+            
+            
+            
+            
+            
+            <div class="project-module module text project-module-text align- editable js-editable js-project-module" style="  padding-top: 60px;
+  padding-bottom: 36px;
+  width: 90%;
+  max-width: 800px;
+  float: left;
+  clear: both;
+">
+  <div class="rich-text js-text-editable module-text"><div style="text-align:center;" class="title"><span style="font-family:vcsm; font-weight:700;"><span style="color:#aaaaaa;" class="texteditor-inline-color"><span style="font-size:72px;" class="texteditor-inline-fontsize">#&nbsp;Dévelop<span class="texteditor-inline-color">pem</span>ent</span></span></span></div></div>
+</div>
+
+            
+            
+            
+            
+            
+            <div class="project-module module video project-module-video editable js-editable js-project-module" style="  padding-top: 0px;
+  padding-bottom: 60px;
+  width: 90%;
+  float: center;
+  clear: both;
+">
+    <div class="embed-dimensions" style="max-width: 1280px; max-height: 720px; margin: 0 auto;">
+    <div class="embed-aspect-ratio" style="padding-bottom: 56.250000%; position: relative; height: 0px;">
+        <iframe class="embed-content" src="./index_files/embed.html" frameborder="0" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+    </div>
+
+</div>
+
+            
+            
+            
+            
+            
+            
+            
+            <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: px;
+  padding-bottom: px;
+  width: 80%;
+  float: center;
+  clear: both;
+">
+
+    <div class="js-lightbox" data-src="https://pro2-bar-s3-cdn-cf.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/125bb123-b7f5-4519-b558-18fae8de66eb.jpg?h=a2ed44f41effca6ce92c3daadf37524b">
+          <img class="js-lazy image-loaded" src="./index_files/125bb123-b7f5-4519-b558-18fae8de66eb_rw_1200.jpg" srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/125bb123-b7f5-4519-b558-18fae8de66eb_rw_600.jpg?h=b5512750e8999e5e39e330d78e067a73 600w,https://pro2-bar-s3-cdn-cf.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/125bb123-b7f5-4519-b558-18fae8de66eb_rw_1200.jpg?h=40419e68a720bcaab2f39017310d8211 1200w," sizes="(max-width: 1200px) 100vw, 1200px">
+    </div>
+
+</div>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="project-module module text project-module-text align- editable js-editable js-project-module" style="  padding-top: 60px;
+  padding-bottom: 20px;
+  width: 100%;
+  max-width: 900px;
+  float: center;
+  clear: both;
+">
+  <div class="rich-text js-text-editable module-text"><div>​​​​​​​<div class="title"><span style="font-family:vcsm; font-weight:700;"><span style="color:#aaaaaa;" class="texteditor-inline-color"><span style="font-size:72px;" class="texteditor-inline-fontsize">//<span class="texteditor-inline-fontsize">T</span>echnology Stack</span></span></span></div></div></div>
+</div>
+
+            
+            
+            
+            
+            <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: px;
+  padding-bottom: px;
+  width: 90%;
+  float: center;
+  clear: both;
+">
+
+    <div class="js-lightbox" data-src="https://pro2-bar-s3-cdn-cf3.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/42d6f633-9c87-43d3-a9b7-7b49d408e371.png?h=ddc4949db1fd12abb266183dc4b0ed86">
+          <img class="js-lazy image-loaded" src="./index_files/42d6f633-9c87-43d3-a9b7-7b49d408e371_rw_1920.png" srcset="https://pro2-bar-s3-cdn-cf3.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/42d6f633-9c87-43d3-a9b7-7b49d408e371_rw_600.png?h=88b76d5716763a685ef3fa854d8f86d3 600w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/42d6f633-9c87-43d3-a9b7-7b49d408e371_rw_1200.png?h=21ee3dd93c3994ac1d017f504ad75081 1200w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/42d6f633-9c87-43d3-a9b7-7b49d408e371_rw_1920.png?h=cc6146e350f66d0278b14a940c647162 1920w," sizes="(max-width: 1920px) 100vw, 1920px">
+    </div>
+
+</div>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="project-module module text project-module-text align- editable js-editable js-project-module" style="  padding-top: px;
+  padding-bottom: px;
+">
+  <div class="rich-text js-text-editable module-text"><div class="title" style="text-align:center;"><span style="color:#aaaaaa;" class="texteditor-inline-color"><span style="font-size:40px;" class="texteditor-inline-fontsize">&lt;h&gt;</span><span style="font-family:vcsm; font-weight:700;"><span style="font-size:72px;" class="texteditor-inline-fontsize">Aftermaths</span></span><span style="font-size:40px;" class="texteditor-inline-fontsize">&lt;/h&gt;</span></span></div></div>
+</div>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="project-module module text project-module-text align- editable js-editable js-project-module" style="  padding-top: px;
+  padding-bottom: px;
+">
+  <div class="rich-text js-text-editable module-text"><div style="text-align:center;">L'application a été très appréciée par les voyageurs du monde entier. De plus, elle a&nbsp;inspiré&nbsp;les non-voyageurs à faire leur sac et à partir en voyage.</div></div>
+</div>
+
+            
+            
+            
+            
+            <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: px;
+  padding-bottom: px;
+">
+
+    <div class="js-lightbox" data-src="https://pro2-bar-s3-cdn-cf.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/8ac504dc-2ed4-47ef-b683-44d97470d161.png?h=7d4dfc91b05a264d604fe39c16bffd21">
+          <img class="js-lazy image-loaded" src="./index_files/8ac504dc-2ed4-47ef-b683-44d97470d161_rw_1200.png" srcset="https://pro2-bar-s3-cdn-cf.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/8ac504dc-2ed4-47ef-b683-44d97470d161_rw_600.png?h=cc30f5f9e1a4f18ce171fba5f41764d7 600w,https://pro2-bar-s3-cdn-cf.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/8ac504dc-2ed4-47ef-b683-44d97470d161_rw_1200.png?h=dd4eefc340cb2bf1d078f85d56495ef4 1100w," sizes="(max-width: 1100px) 100vw, 1100px">
+    </div>
+
+</div>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="project-module module text project-module-text align- editable js-editable js-project-module" style="  padding-top: 44px;
+  padding-bottom: 43px;
+">
+  <div class="rich-text js-text-editable module-text"><div>La plate-forme a été utilisée par plusieurs organismes et entreprises diffuseurs culturels depuis son lancement. Voici un exemple d'usage qu'elle a connu: les Passages insolites 2017 dans la ville de Québec. Grâce à notre application interactive, découvrez 9 installations ludiques et intrigantes créées par des artistes en arts visuels et des collectifs en architecture, qui questionnent notre rapport au monde et à l’espace urbain. Conçu par EXMURO et sous la direction artistique de Vincent Roy.&nbsp;Une façon originale de vivre la ville&nbsp;!</div></div>
+</div>
+
+            
+            
+            
+            
+            <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: px;
+  padding-bottom: px;
+  width: 85%;
+  float: center;
+  clear: both;
+">
+
+    <div class="js-lightbox" data-src="https://pro2-bar-s3-cdn-cf3.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/e96cd363-4e6b-44e0-8607-6037affb72ea.png?h=80f42f3845c6850ff6330b91197c4a77">
+          <img class="js-lazy image-loaded" src="./index_files/e96cd363-4e6b-44e0-8607-6037affb72ea_rw_600.png" srcset="https://pro2-bar-s3-cdn-cf3.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/e96cd363-4e6b-44e0-8607-6037affb72ea_rw_600.png?h=b5f0fe38e596325a9d8b4795ca0078ee 575w," sizes="(max-width: 575px) 100vw, 575px">
+    </div>
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><p>Carte du parcours interactif sur l'app Swipecity</p></div>
+    </div>
+</div>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: px;
+  padding-bottom: px;
+  width: 80%;
+  float: center;
+  clear: both;
+">
+
+    <div class="js-lightbox" data-src="https://pro2-bar-s3-cdn-cf3.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/4f49bac0-4e1f-4dc9-bed1-c32fdb0fde76.png?h=fe7a496932df536eebf073990e2083d0">
+          <img class="js-lazy image-loaded" src="./index_files/4f49bac0-4e1f-4dc9-bed1-c32fdb0fde76_rw_1200.png" srcset="https://pro2-bar-s3-cdn-cf3.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/4f49bac0-4e1f-4dc9-bed1-c32fdb0fde76_rw_600.png?h=fbd7b74d4faa08819465b733f8b22e9c 600w,https://pro2-bar-s3-cdn-cf3.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/4f49bac0-4e1f-4dc9-bed1-c32fdb0fde76_rw_1200.png?h=8960e0dbd70d0464a4ac3efa4f4cd408 650w," sizes="(max-width: 650px) 100vw, 650px">
+    </div>
+
+</div>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="project-module module video project-module-video editable js-editable js-project-module" style="  padding-top: 60px;
+  padding-bottom: 0px;
+  width: 85%;
+  float: center;
+  clear: both;
+">
+    <div class="embed-dimensions" style="max-width: 1280px; max-height: 720px; margin: 0 auto;">
+    <div class="embed-aspect-ratio" style="padding-bottom: 56.250000%; position: relative; height: 0px;">
+        <iframe class="embed-content" src="./index_files/embed(1).html" frameborder="0" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+    </div>
+
+    <div class="project-module module-caption-container js-caption-container align-left">
+      <div class="rich-text module-caption js-text-editable"><p>Vidéo de présentation de l'évènement en collaboration avec Swipecity</p></div>
+    </div>
+</div>
+
+            
+            
+            
+            
+            
+            
+            
+            <div class="project-module module image project-module-image editable js-editable js-project-module" style="  padding-top: 59px;
+  padding-bottom: 29px;
+  width: 40%;
+  float: center;
+  clear: both;
+">
+
+    <div class="js-lightbox" data-src="https://pro2-bar-s3-cdn-cf1.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/c4e32d88-90e8-42a3-993f-cf8b6a10fa39.png?h=6b4a659001931c46ae6860bb304216aa">
+          <img class="js-lazy image-loaded" src="./index_files/c4e32d88-90e8-42a3-993f-cf8b6a10fa39_rw_600.png" srcset="https://pro2-bar-s3-cdn-cf1.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/c4e32d88-90e8-42a3-993f-cf8b6a10fa39_rw_600.png?h=22260a15fadbfedac025cc2875b08cce 300w," sizes="(max-width: 300px) 100vw, 300px">
+    </div>
+
+</div>
+
+            
+            
+            
+            
+            
+            
+            
+          </div>
+        </div>
+      </div>
+    </section>
+          
+        <section class="back-to-top js-editable-target editable">
+          <a href="https://gabrielpilote.io/swipecity-design#"><span class="arrow">↑</span><span class="preserve-whitespace">Back to Top</span></a>
+        </section>
+        <a class="back-to-top-fixed js-editable-target editable js-back-to-top" href="https://gabrielpilote.io/swipecity-design#">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve" class="icon icon-back-to-top">
+          <g>
+            <path d="M13.8,1.3L21.6,9c0.1,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.1,0.3,0.1,0.4s0,0.3-0.1,0.4c-0.1,0.1-0.1,0.3-0.3,0.4
+              c-0.1,0.1-0.2,0.2-0.4,0.3c-0.2,0.1-0.3,0.1-0.4,0.1c-0.1,0-0.3,0-0.4-0.1c-0.2-0.1-0.3-0.2-0.4-0.3L14.2,5l0,19.1
+              c0,0.2-0.1,0.3-0.1,0.5c0,0.1-0.1,0.3-0.3,0.4c-0.1,0.1-0.2,0.2-0.4,0.3c-0.1,0.1-0.3,0.1-0.5,0.1c-0.1,0-0.3,0-0.4-0.1
+              c-0.1-0.1-0.3-0.1-0.4-0.3c-0.1-0.1-0.2-0.2-0.3-0.4c-0.1-0.1-0.1-0.3-0.1-0.5l0-19.1l-5.7,5.7C6,10.8,5.8,10.9,5.7,11
+              c-0.1,0.1-0.3,0.1-0.4,0.1c-0.2,0-0.3,0-0.4-0.1c-0.1-0.1-0.3-0.2-0.4-0.3c-0.1-0.1-0.1-0.2-0.2-0.4C4.1,10.2,4,10.1,4.1,9.9
+              c0-0.1,0-0.3,0.1-0.4c0-0.1,0.1-0.3,0.3-0.4l7.7-7.8c0.1,0,0.2-0.1,0.2-0.1c0,0,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.2-0.1
+              c0.1,0,0.1,0,0.2,0c0,0,0.1,0,0.2,0c0.1,0,0.2,0,0.2,0.1c0.1,0,0.1,0.1,0.2,0.1C13.7,1.2,13.8,1.2,13.8,1.3z"></path>
+          </g>
+          </svg>
+        </a>
+  </div>
+              
+        </main>
+      </div>
+    </div>
+  </div>
+<div class="cookie-banner js-cookie-banner">
+  <p>Insérez ici un texte qui peut varier selon votre région. <a class="consent-link" href="https://gabrielpilote.io/swipecity-design#">Accepter</a></p>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="-6458 -2604 16 16" class="close-btn">
+    <g id="Group_1479" data-name="Group 1479" transform="translate(-8281.367 -3556.368)">
+      <rect id="Rectangle_6401" data-name="Rectangle 6401" class="stroke" width="1.968" height="20.66" transform="translate(1823.367 953.759) rotate(-45)"></rect>
+      <rect id="Rectangle_6402" data-name="Rectangle 6402" class="stroke" width="1.968" height="20.66" transform="translate(1824.758 968.368) rotate(-135)"></rect>
+    </g>
+  </svg>
+</div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e7fb1b89a0","applicationID":"27726866","transactionName":"ZwZaYkJVDERXUxULCV5Me0NDQA1aGWsmJzJtQ2tfRFFYDXJVBwMTXBd7WV5AEFhaXAQQXAoKVlJVTD1oUVUV","queueTime":0,"applicationTime":85,"atts":"S0FNFApPHxsUUUNYHU0e","errorBeacon":"bam.nr-data.net","agent":""}</script>
+<script type="text/javascript">
+  // fix for Safari's back/forward cache
+  window.onpageshow = function(e) {
+    if (e.persisted) { window.location.reload(); }
+  };
+</script>
+  <script type="text/javascript" src="./index_files/CCNhUue_2Hj4kYCHW1W1Y4FNHxV7ISHJ2ZN5ZizFPjGfelMffHYEBsJzwD9oFDIDWDBKwDMujhjXZejowRIhweJXZ28qFQFKjR4RFQwkwDwkZR8qZ2wXFD9-qMI7Ociyj14TZAU3-AUzie90-AvCHKo.téléchargement"></script>
+  <script type="text/javascript">var __config__ = {"page_id":"p5a921ff8bf6c69014a21800b0b61a365295fc258611745a96a2c1","theme":{"name":"geometric"},"pageTransition":true,"linkTransition":true,"disableDownload":true,"lightbox":{"enabled":false},"cookie_banner":{"enabled":false},"googleAnalytics":{"trackingCode":"UA-89086672-1","anonymization":false}};</script>
+  <script type="text/javascript" src="./index_files/main.js.téléchargement"></script>
+
+</body></html>
