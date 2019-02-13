@@ -409,12 +409,11 @@ body {
 
 html {
   /* stylelint-disable function-url-quotes */
-  background-image: url("");
+  background-image: url("https://pro2-bar-s3-cdn-cf3.myportfolio.com/dbb39e0b7e795b6582e90cf419d91cdf/463384d5-5c49-41c6-a341-7222a64ddda6_rwc_0x0x3110x2160x3110.png?h=2bef5742151be693a0eda7d03c06caf5");
   /* stylelint-enable function-url-quotes */
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed; }
+  background-position: top center;
+  background-repeat: repeat;
+  background-size: auto; }
   html:before {
     background-color: #000;
     display: none;
